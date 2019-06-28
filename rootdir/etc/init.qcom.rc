@@ -8,6 +8,8 @@ on init
     chmod 0644 /proc/cmdline
 
 on boot
+    mount none /system/overlay/BluetoothResCommon.apk /vendor/overlay/BluetoothResCommon.apk bind
+
 on charger
     write /sys/class/backlight/panel0-backlight/brightness 150
 
